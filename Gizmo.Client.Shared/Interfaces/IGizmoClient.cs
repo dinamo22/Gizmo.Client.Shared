@@ -662,7 +662,7 @@ namespace Gizmo.Client
         /// <returns>
         /// Age rating of application executables.
         /// </returns>
-        public Task<PagedListClassic<ApplicationExecutableAgeRatingModel>> AgeRatingGetAsync(ApplicationExecutableAgeRatingFilter filter, CancellationToken cToken = default);
+        public Task<PagedListClassic<ApplicationExecutableAgeRatingModel>> ExecutablesAgeRatingGetAsync(ApplicationExecutableAgeRatingFilter filter, CancellationToken cToken = default);
 
         /// <summary>
         /// Returns the list of user popular products.
