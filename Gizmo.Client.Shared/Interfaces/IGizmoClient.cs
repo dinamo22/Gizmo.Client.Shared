@@ -655,6 +655,16 @@ namespace Gizmo.Client
         public Task<IEnumerable<PopularExecutableModel>> UserPopularExecutablesGetAsync(UserPopularExecutablesFilter filters, CancellationToken cancellationToken = default);
 
         /// <summary>
+        /// Gets age rating of application executables.
+        /// </summary>
+        /// <param name="filter">Application executable age rating filter.</param>
+        /// <param name="cToken">Cancellation token.</param>
+        /// <returns>
+        /// Age rating of application executables.
+        /// </returns>
+        public Task<PagedListClassic<ApplicationExecutableAgeRatingModel>> AgeRatingGetAsync(ApplicationExecutableAgeRatingFilter filter, CancellationToken cToken = default);
+
+        /// <summary>
         /// Returns the list of user popular products.
         /// </summary>
         /// <param name="filters">Filters.</param>
